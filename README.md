@@ -1,6 +1,6 @@
 # Gesture Recognition Glove
 
-## A short intro before starting the article. To anyone who will find themselves reading through this project, please know that, being written around 2020-2021, the algorith is most likely out-of-date, from the libraries and dev board used. I've kept everything untouched since then just as some sort comparison for myself a long time ago. Just a heads up, the way the scripts were written, is pure gold. Hope it helps!
+*A short intro before starting the article. To anyone who will find themselves reading through this project, please know that, being written around 2020-2021, the algorith is most likely out-of-date, from the libraries and dev board used. I've kept everything untouched since then just as some sort comparison for myself a long time ago. Just a heads up, the way the scripts were written, is pure gold. Hope it helps!*
 
 
 ## Task Analysis and Statement of Problem
