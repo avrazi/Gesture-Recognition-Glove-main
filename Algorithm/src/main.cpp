@@ -14,10 +14,8 @@
 // Create a Asynchronous Web Server object on port 80
 WebServer server(80);
 // Network Credentials 
-const char *ssid = "Telia-2DCE79-Greitas";
-const char *password = "erasmus512";
-//const char *ssid = "Hotspot";
-//const char *password = "tedi4815";
+const char *ssid = "Wi-Fi name";
+const char *password = "Wi-Fi pass";
 
 #define LED 2
 
