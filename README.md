@@ -1,25 +1,6 @@
 # Gesture Recognition Glove
 
-*A short intro before starting the article. To anyone who will find themselves reading through this project, please know that, being written around 2020-2021, the algorith is most likely out-of-date, from the libraries and dev board used. I've kept everything untouched since then just as some sort comparison for myself a long time ago. Just a heads up, the way the scripts were written, is pretty bad. Hope it helps!*
-
-
-## Task Analysis and Statement of Problem
-
-Communication is of significant importance in today’s data driven society, not only in extreme
-situations, but also everyday life. Shopping at a supermarket, or asking for directions, event planning, or
-even national security depend on reliable communication. To use certain public services, such as the
-doctor’s office or local government, one could hire an interpreter to alleviate some of the frustration and
-confusion of the communication barrier; however, hiring an interpreter can be expensive and time
-consuming. Hearing-impaired people must face the challenges associated with the inability to
-communicate verbally, which hinders their interaction with the rest of the hearing world. To use certain
-public services, such as the doctor’s office or local government, one could hire an interpreter to alleviate
-some of the frustration and confusion of the communication barrier; however, hiring an interpreter can
-be expensive and time consuming. Despite such a large population of people who speak ASL, there are
-few people outside of native speakers who can understand the language, which makes the challenge of
-bridging the communication gap difficult. This project is an initiative to create a prototype device as a
-proposed solution to this issue and to bridge the communication gap difficulty. It will explore the use of
-a glove to provide sign-language translation in a way that improves on the methods of pre-existing
-designs.
+*A short intro before starting the article. To anyone who will find themselves reading through this project, please know that, being written around 2020-2021, the algorithm is most likely out-of-date, from the libraries to the dev board used. I've kept everything untouched since then just as some sort comparison for myself a long time ago. Hope it helps!*
 
 ***The whole prototype will require 5 flex sensors, a development board, an accelerometer,
 gyroscope, and a battery shield.*** During the making of this prototype, a wearable glove will be created
@@ -79,51 +60,6 @@ we will be directed into the webpage, making the whole process of interaction, s
 website will be sending and giving requests with the board constantly.
 
 ![image](https://user-images.githubusercontent.com/66420672/174337449-ea25139d-c078-4aae-bba5-4b6928d0845c.png)
-
-## Selection of Components
-
-To achieve our desired goal and build our prototype, we had to decide which devices and
-components to use. This meant researching for each main block in the block diagram to have a clearer
-view on which device will be the most suitable for this project. Extensive research was conducted
-especially for the development board since it will be the brains of this device.
-
-### Development Board
-
-Starting from the development board. Many were thought as possibilities for this project. Ideally,
-we were looking for a board with a built-in Wi-Fi module, at least 5 analog pins, at least 1 I2C pin,
-relatively fast clock speed (above 100 MHz), and enough flash memory so it can handle the algorithm,
-opening a website, and sending the data to that website (above 2 MB). Three development boards that
-stood out the most were Arduino UNO, ESP32 and Arduino Portenta. We will shortly go through the
-main specifications regarding all three development boards and state our reasons for choosing the ESP32
-as our main board.
-
-#### ***Arduino UNO***
-
-Arduino UNO is a microcontroller board based on the ATmega328P. This board has 14
-input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz ceramic
-resonator, a USB connection, a power jack, an ICSP header and a reset button. It contains everything
-needed to support the microcontroller; it can easily connect to a computer with a USB cable or power it
-with an AC-to-DC adapter or battery to get started. It can be tinkered without worrying too much about
-making a mistake, and worst-case scenario, the chip can be replaced with a very cheap price and start
-over again. The extensive large backing community and easy-to-use factors made it an attractive option
-for this project, but the low numbers of analog pins, low flash memory and clock speed made it not the
-right choice.
-
-#### ***Arduino Portenta H7***
-
-Portenta H7 simultaneously runs high level code along with real time tasks. The design includes
-two processors that can run tasks in parallel. For example, is possible to execute Arduino compiled code
-along with MicroPython one and have both cores to communicate with one another. The Portenta
-functionality is two-fold, it can either be running like any other embedded microcontroller board, or as
-the main processor of an embedded computer. H7's main processor is the dual core STM32H747
-including a Cortex® M7 running at 480 MHz and a Cortex® M4 running at 240 MHz. The onboard
-wireless module allows to simultaneously manage Wi-Fi and Bluetooth® connectivity. The Wi-Fi
-interface can be operated as an Access Point, as a Station or as a dual mode simultaneous AP/STA andPage |31
-can handle up to 65 Mbps transfer rate. Bluetooth® interface supports Bluetooth Classic and BLE. It has
-3 ADCs with 16-bit max resolution and 2 DACs with 12-bit resolution. Its board power supply is 5V an
-operational voltage of 3.3V. The price of Portenta is around 100€, which made it a very expensive
-purchase. Its number of ADC is not enough for our project, so it made it not the right choice for our
-project.
 
 #### ***ESP32 Devkit V1***
 
@@ -291,7 +227,7 @@ to direct current) (up to 4A) connectors, and 3x3VDC (up to 1A)
 The background electronics are a clever blend of three requisite circuits a lithium-ion
 battery charger circuitry, a battery protection circuitry, and a dc-dc boost converter circuitry. Refer to
 the annotated image provided below to get a deep insight on the underlying electronics. In the shield,
-the dc- dc boost converter chip is used to deliver 5VDC (4.99V) through the USB ‘A’ socket and 5V
+the dc - dc boost converter chip is used to deliver 5VDC (4.99V) through the USB ‘A’ socket and 5V
 male-header points, generated from the available 3.7V-4.2VDC Li-Ion battery output. The second
 channel output, marked as 3V but 3.3V on the dot, is supplied by the parallel combination of three
 positive voltage regulator chips. The 3.3VDC supply is derived from the 3.7V-4.2VDC Li-Ion battery
